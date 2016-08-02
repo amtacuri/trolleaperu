@@ -54,6 +54,9 @@
           <div class="pt-section-upload display_off ">
             <select class="pt-category" name="">
                 <option value="0">Seleccione categoria</option>
+                <option value="1">Familia</option>
+                <option value="2">Trabajo</option>
+                <option value="3">Animados</option>
             </select>
             <div class="pt-search">
                 <input type="text" name="name" value="" class="pt-txt-search" />
@@ -328,35 +331,5 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
-    <script type="text/javascript">
-        $(function(){
-            $('#someTab').tab('show');
-            $('#showUpload').click(function(e){
-                e.preventDefault();
-                $('.pt-section-upload').slideDown().focus();
-                $('#hideUpload').show();
-                $(this).hide();
-            });
-            $('#hideUpload').click(function(e){
-                e.preventDefault();
-                $('.pt-section-upload').slideUp();
-                $('#showUpload').show();
-                $(this).hide();
-              });
-              $('#showOptions').click(function(e){
-                  e.preventDefault();
-                  $('.pt-section-options').slideDown().focus();
-                  $('#hideOptions').show();
-                  $(this).hide();
-              });
-              $('#hideOptions').click(function(e){
-                  e.preventDefault();
-                  $('.pt-section-options').slideUp();
-                  $('#showOptions').show();
-                  $(this).hide();
-                });
-        });
-
-    </script>
   </body>
 </html>

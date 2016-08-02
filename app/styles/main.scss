@@ -181,7 +181,7 @@ body, .footer {
             width: 80%;
             margin-left: auto;
             margin-right: auto;
-            background: #1D2E41;
+            background-color: #1D2E41;
             border: none;
             padding: 8px 10px;
             color: #FFF;
@@ -578,6 +578,8 @@ body, .footer {
 			width: 100%;
 			em { display: none; visibility: hidden; opacity: 0; }
 		}
-
+	}
+	.pt-category {
+		background: url("../images/ico-combo.jpg") 97% center no-repeat;
 	}
 }
